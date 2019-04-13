@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Welcome to your first asset!
+
+    You could've noticed there is a link to Roboto font in the head.
+    You can use it in css by typing font-family: Roboto, sans-serif;
+    and you can customize it by using font-weight (400, 500 etc. - numbers in the link tag)
+
+    Good luck and have fun!
+  -->
+  <div id="content">
+    <div id='main'>
+      <div id='firstBlock' class="flex-box" onclick='showModal(this)'>
+        <img src='img/device.svg'>
+        <h4>MOBILE</h4>
+        <p class="about">Get notification about new releases in our mobile apps </p>
+        <p class="price"><sup>$</sup>10<span>/month</span></p>
+      </div>
+      <div id='secondBlock' class="flex-box" onclick='showModal(this)'>
+        <img src='img/laptop.svg'>
+        <h4>DESKTOP</h4>
+        <p class="about" >Enjoy new episodes on your laptop in browser with our web service, which supports all the platform </p>
+        <p class="price"><sup>$</sup>15<span>/month</span></p>
+      </div>
+      <div id='lastBlock' class="flex-box" onclick='showModal(this)'>
+        <img src='img/monitor.svg'>
+        <h4>TV</h4>
+        <p class="about" >Watch your favorite service at home on lange screen with our TV application </p>
+        <p class="price"><sup>$</sup>20<span>/month</span></p>
+      </div>
+    </div>
+    <button class='btn'>Give feedback</button>
+  </div>
+  <div id="myModal" class="modal flex-box">
+    <div id='mDiv'>
+      <h4>Confirmation</h4>
+      <span id='mClose'><img src="img/cross.svg"></span>
+      <div id='mContent' class="flex-box">
+      
+      </div>
+      <button class='btn'>Confirm and pay</button>
+    </div>
+  </div>
+  <script type="text/javascript" src='script.js' ></script>
+</body>
+</html>

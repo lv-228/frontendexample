@@ -1,0 +1,159 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Roboto, sans-serif;
+}
+
+body {
+	background: rgb(137, 151, 213);
+}
+
+#main{
+    display: flex;
+  	align-items: center;
+  	padding: 20px;
+}
+
+#main > h4,p,img {
+	margin: 12px;
+}
+
+#main > .flex-box {
+	min-height:285px;
+	max-width: 270px;
+}
+
+#content{
+	padding: 20px;
+	border-radius: 5px;
+	background-color: rgb(255,255,255);
+	margin-left: auto;
+    margin-right: auto;
+    margin-top:5%;
+    display: flex;
+  	align-items: center;
+    width: 60%;
+    height: 40%;
+    min-width: 452px;
+    min-height: 370px;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+
+#mDiv{
+	background-color: rgb(255,255,255);
+	min-width: 300px;
+	min-height: 350px;
+	border-radius: 5px;
+	width: 30%;
+	height: 50%;
+	position: relative;
+}
+
+#mDiv > :first-child{
+	margin-top:10px;
+}
+
+#mClose{
+	display: flex;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+
+#mClose:hover{
+	cursor: pointer;
+}
+
+#mClose > img{
+	width: 20px;
+	height: 20px;
+}
+
+.flex-box > img{
+	width: 60px;
+	margin-bottom: 38px;
+}
+
+.flex-box{
+	box-sizing: border-box;
+	display: -webkit-flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.flex-box > :nth-child(2), :nth-child(4){
+	color:rgb(104, 61, 217);
+}
+
+.flex-box:hover:not(#mContent):not(.modal){
+	background-color: rgb(246, 246, 246);
+	cursor: pointer;
+}
+
+.btn {
+	font-size: 15pt;
+	color:white;
+	background-color:rgb(42, 89, 252);
+	outline: none;
+	min-width: 220px;
+	min-height: 40px;
+	border:none;
+	border-radius: 5px;
+}
+
+.btn:hover { 
+	cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  	align-items: center;
+}
+
+.price {
+	font-size:20pt;
+}
+
+.price > span,sup{
+	font-size:0.5em;
+}
+
+.about{
+	color: rgb(177, 177, 175)
+}
+
+@media (max-width: 995px) {
+	#content{
+		min-height: 400px;
+	}
+}
+
+@media (max-width: 890px) {
+	#content{
+		min-height: 440px;
+	}
+}
+
+@media (max-width: 550px) {
+	#main{
+		flex-direction: column;
+	}
+	
+	#content{
+		min-height: 950px;
+		max-width: 300px;
+		min-width: 300px;
+		margin-bottom: 20px;
+	}
+}
