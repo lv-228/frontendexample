@@ -123,6 +123,7 @@ body {
 }
 
 .price {
+	margin-top: auto;
 	font-size:20pt;
 }
 
