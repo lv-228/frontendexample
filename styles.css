@@ -99,7 +99,7 @@ a{
 }
 
 .flex-box:hover:not(#mContent):not(.modal){
-	background-color: rgb(246, 246, 246);
+	background-color: rgb(235, 235, 235);
 	cursor: pointer;
 }
 
