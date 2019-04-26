@@ -18,6 +18,5 @@ function add(a, b) {
 }
 
 function getAdd(){
-	console.log(add(document.getElementById('first').value, document.getElementById('second').value));
 	document.getElementById('result').innerHTML = add(document.getElementById('first').value, document.getElementById('second').value);
 }
