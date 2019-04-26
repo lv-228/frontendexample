@@ -1,5 +1,6 @@
 var modal    = document.getElementById('myModal');
 var mContent = document.getElementById('mContent');
+
 function showModal(content) {
 	console.log(content.childNodes[7].innerHTML);
 	var newImg = document.createElement('img');

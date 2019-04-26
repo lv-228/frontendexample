@@ -8,6 +8,16 @@ body {
 	background: rgb(137, 151, 213);
 }
 
+input{
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    height:20px;
+    width:220px;
+    padding:5px 8px;
+    border-radius: 5px;
+}
+
 #main{
     display: flex;
   	/*align-items: center;*/

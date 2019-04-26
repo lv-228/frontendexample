@@ -9,11 +9,16 @@
   		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<form action="" name="numbers">
-			<input type="text" name="first">
-			<input type="text" name="second">
-			<button class="btn">Сложить</button>
+	<a href='index.html' style='padding: 5px; opacity:.4;'>main</a>
+	<div id="content">
+		<form onsubmit="getAdd();return false">
+			<input type="text" name="first" id='first' required="" pattern="[0-9]*" placeholder="Первое слагаемое">
+			+
+			<input type="text" name="second" id='second' required="" pattern="[0-9]*" placeholder="Второе слагаемое">
+			<button class="btn" id='add'>Сложить</button>
 		</form>
-		<script type="text/javascript" src='script.js' ></script>
+		<p>Результат:</p><p id='result'></p>
+	</div>
+		<script type="text/javascript" src='addscript.js' ></script>
 	</body>
 </html>
