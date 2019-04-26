@@ -20,7 +20,7 @@ body {
 
 #main > .flex-box {
 	min-height:285px;
-	max-width: 270px;
+	min-width: 30%;
 }
 
 #content{
@@ -42,11 +42,7 @@ body {
 
 #mDiv{
 	background-color: rgb(255,255,255);
-	min-width: 300px;
-	min-height: 350px;
 	border-radius: 5px;
-	width: 30%;
-	height: 50%;
 	position: relative;
 }
 
@@ -71,7 +67,7 @@ body {
 }
 
 .flex-box > img{
-	width: 60px;
+	width: 5em;
 	margin-bottom: 38px;
 }
 
@@ -101,6 +97,8 @@ body {
 	min-height: 40px;
 	border:none;
 	border-radius: 5px;
+	margin-top: auto;
+	margin: 10px;
 }
 
 .btn:hover { 
